@@ -8,7 +8,7 @@ defmodule Crawler.CrawlerController do
       d |> Enum.map(&InsertToDB.create(&1))
       getnext(pid)
     else
-      IO.inspct("jobs finished")
+      IO.puts("jobs finished")
     end
   end
 
